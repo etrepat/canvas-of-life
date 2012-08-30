@@ -1,0 +1,5 @@
+.rvmrc
+dist/*.js
+dist/*.gz
+.bundle
+Gemfile.lock
