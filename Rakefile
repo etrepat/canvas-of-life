@@ -110,9 +110,7 @@ module CanvasOfLife
 "use strict";
 
 #{data}
-
 })(this);
-
 WRAP
       wrapped
     end
@@ -122,7 +120,7 @@ end
 desc "Build scripts"
 task :build do
   compiler = CanvasOfLife::Compiler.new :root => './', :paths => %w(lib),
-    :assets => %w( col.js ), :output => './dist'
+    :assets => %w( canvas-of-life.js ), :output => './dist'
   compiler.compile :minify => true
 end
 
