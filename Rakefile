@@ -73,7 +73,7 @@ module CanvasOfLife
       FileUtils.mkpath filename.dirname
 
       asset.write_to(filename)
-      asset.write_to("#{filename}.gz") if options[:minify]
+      # asset.write_to("#{filename}.gz") if options[:minify]
 
       asset
     end
