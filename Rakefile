@@ -4,14 +4,8 @@ require 'pathname'
 require 'fileutils'
 require 'logger'
 
-begin
-  require 'bundler'
-  Bundler.require
-rescue Exception => e
-  $stderr.puts e.message
-  $stderr.puts "Please run `bundle install` to install missing gems"
-  exit e.status_code
-end
+require 'bundler'
+Bundler.require
 
 module CanvasOfLife
   class Compiler
